@@ -28,10 +28,7 @@ class DashboardPage extends React.Component {
     return (
       <StyledLayout>
         <Layout.Sider>
-          <Menu
-            theme="dark"
-            { /* defaultSelectedKeys={[window.location.pathname]} TODO: write a util to get window obj */ }
-          >
+          <Menu theme="dark">
             <Menu.Item key="/dashboard/profile">
               <Link to="/dashboard/profile">Profile</Link>
             </Menu.Item>

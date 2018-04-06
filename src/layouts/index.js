@@ -9,6 +9,7 @@ import enUS from 'antd/lib/locale-provider/en_US';
 
 import configureStore from '../store';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './index.css';
 import 'antd/dist/antd.css';
 
@@ -24,6 +25,7 @@ const Container = styled.div`
   .content {
     padding: 50px;
     flex: 1;
+    background: #f0f2f5;
   }
 `
 
@@ -44,6 +46,7 @@ const TemplateWrapper = ({ children }) => (
           <Layout.Content className="content">
             {children()}
           </Layout.Content>
+          <Footer />
         </Layout>
       </LocaleProvider>
     </Provider>
