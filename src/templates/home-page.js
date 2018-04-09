@@ -37,7 +37,7 @@ const HomePage = ({data}) => {
       >
         {
           frontmatter.offerings.blurbs.map((b) =>
-            <StyledCol xs={{span: 24}} md={{span:12}}>
+            <StyledCol key={Math.random()} xs={{span: 24}} md={{span:12}}>
               <img className="card-image" src={b.image} />
               <p key={Math.random()}>{b.text}</p>
             </StyledCol>
@@ -50,7 +50,7 @@ const HomePage = ({data}) => {
 
 export default HomePage;
 
-export const pageQuery = graphql`
+export const homePageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {

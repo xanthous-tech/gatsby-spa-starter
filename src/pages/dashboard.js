@@ -19,16 +19,26 @@ const StyledLayout = styled(Layout)`
 
 const Dashboard = ({ match: { params }, dispatch }) => {
   if (params.path == 'profile') return <div>Profile</div>;
-  else if (params.path == 'settings') return <div onClick={() => dispatch({type: 'TEST_ACTION'})}>Settings</div>;;
+  else if (params.path == 'settings') return <div onClick={() => dispatch({type: 'TEST_ACTION'})}>Settings</div>;
   return <div onClick={() => dispatch({type: 'TEST_ACTION'})}>Hello</div>;
 }
 
 class DashboardPage extends React.Component {
+  getLocation() {
+    // window is not defined during the build.
+    // We have to make sure it won't fail.
+    try { return window.location.pathname }
+    catch (e) { /**/ }
+  }
+
   render() {
     return (
       <StyledLayout>
         <Layout.Sider>
-          <Menu theme="dark">
+          <Menu
+            theme="dark"
+            defaultSelectedKeys={[this.getLocation()]}
+          >
             <Menu.Item key="/dashboard/profile">
               <Link to="/dashboard/profile">Profile</Link>
             </Menu.Item>

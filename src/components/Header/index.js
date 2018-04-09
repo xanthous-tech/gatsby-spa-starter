@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Layout } from 'antd';
+import { Layout, Menu } from 'antd';
 import styled from 'styled-components';
 
 const GatsbyLink = styled(Link)`
@@ -22,15 +22,25 @@ const StyledHeader = styled(Layout.Header)`
   justify-content: space-between;
 `;
 
-const Header = () => (
-  <StyledHeader>
-    <GatsbyLink to="/" >Gatsby</GatsbyLink>
+class Navigation extends React.Component {
+  constructor() {
+    super();
 
-    <span>
-      <StyledLink to="/" >Blog</StyledLink>
-      <StyledLink to="/dashboard" >Dashboard</StyledLink>
-    </span>
-  </StyledHeader>
-)
+    this.state = { current: '1' }
+  }
 
-export default Header
+  render () {
+    return (
+      <StyledHeader>
+        <GatsbyLink to="/" >Gatsby</GatsbyLink>
+
+        <span>
+          <StyledLink to="/blog" >Blog</StyledLink>
+          <StyledLink to="/dashboard" >Dashboard</StyledLink>
+        </span>
+      </StyledHeader>
+    )
+  }
+}
+
+export default Navigation

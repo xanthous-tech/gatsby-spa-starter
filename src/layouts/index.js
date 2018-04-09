@@ -25,7 +25,6 @@ const Container = styled.div`
   .content {
     padding: 50px;
     flex: 1;
-    background: #f0f2f5;
   }
 `
 

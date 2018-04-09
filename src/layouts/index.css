@@ -2,11 +2,11 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: #f0f2f5;
 }
 
 body {
   margin: 0;
-  height: 100vh;
 }
 
 #___gatsby {
