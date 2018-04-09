@@ -8,6 +8,7 @@
     "axios": "^0.18.0",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-babel": "^1.0.0",
     "gatsby-plugin-google-tagmanager": "^1.0.17",
     "gatsby-plugin-manifest": "^1.0.16",
     "gatsby-plugin-netlify-cms": "^1.0.12",
@@ -48,15 +49,15 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.3",
+    "babel-plugin-import": "^1.7.0",
     "eslint": "^4.19.1",
-    "jest": "^22.4.3",
-    "lint-staged": "^7.0.2",
-    "prettier": "^1.11.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.2",
     "prettier": "^1.11.1"
   },
   "lint-staged": {

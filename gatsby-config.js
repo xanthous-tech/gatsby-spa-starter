@@ -1,4 +1,4 @@
-const config = require("./meta/config");
+const config = require('./meta/config');
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
@@ -32,31 +32,31 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: config.googleTagManagerID,
         includeInDevelopment: false,
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
         short_name: config.siteTitleAlt,
-        start_url: "/",
+        start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "standalone",
+        display: 'standalone',
         icons: [
           {
-            src: `/icons/icon-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
+            src: '/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: `/icons/icon-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
+            src: '/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
         ],
       },
