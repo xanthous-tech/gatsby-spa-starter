@@ -1,12 +1,11 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 import { Layout } from 'antd';
 import styled from 'styled-components';
 
-let StyledFooter = styled(Layout.Footer)`
+const StyledFooter = styled(Layout.Footer)`
   height: 150px;
-  background-color: #001529!important;
-  color: white!important;
+  background-color: #001529 !important;
+  color: white !important;
 
   .copyright {
     text-align: center;
@@ -17,9 +16,10 @@ let StyledFooter = styled(Layout.Footer)`
 const Footer = () => (
   <StyledFooter>
     <p className="copyright">
-      Copyright © Gatsby Starter Single Page Application 2018. All Rights Reserved.
+      Copyright © Gatsby Starter Single Page Application 2018. All Rights
+      Reserved.
     </p>
   </StyledFooter>
-)
+);
 
-export default Footer
+export default Footer;
