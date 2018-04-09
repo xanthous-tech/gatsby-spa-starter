@@ -1,11 +1,11 @@
 {
-  "name": "@xanthous/frontend",
-  "description": "Gatsby default starter",
-  "version": "0.1.8",
+  "name": "gatsby-spa-starter",
+  "description": "Gatsby SPA Starter",
+  "version": "0.0.1",
+  "author": "Xanthous Developers <opensource@x-tech.io>",
   "private": true,
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@xanthous/auth": "^0.1.8",
+    "@xanthous/auth": "^0.1.12",
     "antd": "^3.4.0",
     "axios": "^0.18.0",
     "gatsby": "^1.9.241",
@@ -22,6 +22,7 @@
     "gatsby-source-filesystem": "^1.5.28",
     "gatsby-transformer-remark": "^1.7.39",
     "gatsby-transformer-sharp": "^1.6.22",
+    "husky": "^0.14.3",
     "lodash": "^4.17.5",
     "react": "^16.3.1",
     "react-disqus-comments": "^1.1.1",
@@ -43,9 +44,9 @@
     "precommit": "lint-staged",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
+    "format": "node_modules/.bin/prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix",
+    "lint": "node_modules/.bin/eslint --fix",
     "serve": "cd public && serve"
   },
   "devDependencies": {
@@ -64,10 +65,10 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
-      "eslint --fix",
+      "node_modules/.bin/prettier --write",
+      "node_modules/.bin/eslint --fix",
       "git add",
-      "jest --bail --findRelatedTests"
+      "node_modules/.bin/jest --bail --findRelatedTests"
     ]
   }
 }
