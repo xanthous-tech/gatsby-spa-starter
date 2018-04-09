@@ -1,11 +1,11 @@
 {
   "name": "@xanthous/frontend",
   "description": "Gatsby default starter",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "private": true,
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@xanthous/auth": "^0.1.5",
+    "@xanthous/auth": "^0.1.8",
     "antd": "^3.4.0",
     "axios": "^0.18.0",
     "gatsby": "^1.9.241",
