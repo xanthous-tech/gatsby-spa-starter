@@ -1,11 +1,11 @@
 {
   "name": "gatsby-spa-starter",
   "description": "Gatsby SPA Starter",
-  "version": "0.2.2",
+  "version": "0.3.4",
   "author": "Xanthous Developers <opensource@x-tech.io>",
   "private": true,
   "dependencies": {
-    "@xanthous/auth": "^0.2.2",
+    "@xanthous/auth": "^0.3.4",
     "antd": "^3.4.0",
     "axios": "^0.18.0",
     "gatsby": "^1.9.241",
